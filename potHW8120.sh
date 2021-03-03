@@ -3,7 +3,7 @@ HOST="$1"
 expect -c "
 spawn telnet 192.168.$HOST
 expect \"Login:\"
-send \"root\\r\\r\"
+send \"root\\r\"
 expect \"Password:\"
 send \"adminHW\\r\"
 expect \"WAP>\"
